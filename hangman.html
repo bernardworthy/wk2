@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <h1>Hangman</h1>
+
+  <div class="word-box">
+
+
+
+  </div>
+
+  <!-- <form>
+    <input class="guess-box" type="text" pattern="[A-Za-z]{1}" title="Enter 1 letter at a time" onchange="setGuess(this.value)">
+    <button onclick="submitGuess()">Guess</button>
+  </form> -->
+
+  <input class="guess-box" type="text" onchange="setGuess(this.value)">
+  <button type="submit" onclick="submitGuess()">Guess</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/hangman-words.js"></script>
+  <script src="js/hangman.js"></script>
+
+</body>
+</html>

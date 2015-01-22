@@ -43,3 +43,7 @@ input {
   padding: 0.5em;
   border: 1px solid #999;
 }
+
+.guess-box:invalid {
+  color:red;
+}
