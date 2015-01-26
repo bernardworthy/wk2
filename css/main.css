@@ -2,9 +2,9 @@
 body {
     font-family: sans-serif;
     line-height: 1.4em;
-    background: #F5F5F5;
+    background: #edefec;
     color: #444;
-    padding: 2em;
+    padding: 0em;
 }
 
 h1 { font-size: 2em; margin: .67em 0 }
@@ -44,6 +44,237 @@ input {
   border: 1px solid #999;
 }
 
+.hidden {
+  display: none;
+}
+
+.show {
+}
+
+.title {
+  text-align: center;
+  height: 50px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*.arcade_middle:after {
+  background-image: url(../img/arcade_middle.jpg);
+  content:' ';
+  height: 634px;
+  width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  background-color: black;
+}*/
+
+.arcade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -8%);
+  /*background-color: red;*/
+}
+
+/*.arcade_middle_bkg {
+  height: 534px;
+  width: 632px;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}*/
+
+/*.game-play__opening {
+  height: 525px;
+  width: 530px;
+  background-image: url(../img/gameplay.mov);
+  background-size: contain;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  background-repeat: no-repeat;
+}*/
+
+.gameplay {
+  width: 600px;
+  height: 525px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 18%);
+}
+
+.overlay {
+  width: 650px;
+  height: 515px;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -3.5%;
+  left: 50%;
+  transform: translate(-50%, 18%);
+  display: none;
+  text-align: center;
+}
+
+/*.wrong {
+  width: 650px;
+  height: 515px;
+  position: absolute;
+  top: -3.5%;
+  left: 50%;
+  transform: translate(-50%, 18%);
+  -webkit-animation:
+    wrong 3s;
+  animation:
+    wrong 3s;
+}*/
+
+@-webkit-keyframes wrong {
+  0%{
+    background-color: red;
+  }
+  33% {
+    background-color: green;
+  }
+  66% {
+    background-color: blue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+@keyframes wrong {
+  0%{
+    background-color: red;
+  }
+  33% {
+    background-color: green;
+  }
+  66% {
+    background-color: blue;
+  }
+  100% {
+    background-color: orange;
+  }
+}
+
+@-webkit-keyframes hide {
+  0%, 100% {
+    display: none;
+  }
+}
+
+@keyframes hide {
+  0%, 100% {
+    display: none;
+  }
+}
+
+.highlight {
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #ff16a6;
+}
+
+.guide-box {
+  height: auto;
+  width: 100px;
+  position: absolute;
+  top: 15%;
+  left: -5.5%;
+  transform: translate(8%, 5%);
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+}
+
+.lives-box {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 10%;
+  right: -10%;
+  transform: translate(0%, 18%);
+  color: white;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.word-box {
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  right: -16.75%;
+  transform: translate(0%, 0%);
+  color: #ff16a6;
+  font-size: 2em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.lives {
+  font-weight: bold;
+  font-size: 1.75em;
+  color: #ff16a6;
+}
+
+.arcade_bkg {
+  background-image: url(../img/arcade_bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  height: 675px;
+  width: 1440px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.user-play {
+  text-align: center;
+  height: 200px;
+  width: 500px;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  /*padding: 2em 2em;*/
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+
+/*.word-box {
+  margin-bottom: 1em;
+  font-size: 2em;
+}*/
+
 .guess-box:invalid {
   color:red;
+}
+
+.guess {
+  margin-left: 1em;
+  background-color: #ff16a6;
+  border-radius: 37.5px;
+  height: 75px;
+  width: 75px;
+  -webkit-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+.wait-message {
+  font-size: 1.15em;
+  margin-top: 1em;
 }

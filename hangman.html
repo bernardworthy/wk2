@@ -2,26 +2,53 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hangman</title>
+  <title>Rescue Donkey Kong</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-  <h1>Hangman</h1>
+  <!-- <div class="title">
+    <h1>Rescue Donkey Kong</h1>
+  </div> -->
 
-  <div class="word-box">
+  <div class="arcade">
+    <!-- <div class="arcade_middle_bkg"></div> -->
+    <div class="arcade_bkg"></div>
 
+    <div class="gameplay">
 
+      <video id="video1" width="600">
+        <source src="vid/gameplay.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+      </video>
 
+      <div class="guide-box">
+        <p>Guess the <span class="highlight">Magic Password</span> to Free Donkey Kong!</p>
+      </div>
+
+      <div class="lives-box">
+        <span class="lives"></span>
+        <p>Lives Left</p>
+      </div>
+
+      <div class="word-box"></div>
+
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="user-play">
+
+      <input class="guess-box" type="text" onchange="setGuess(this.value)">
+      <button class="guess" type="submit" onclick="submitGuess()">Guess</button>
+      <!-- <button type="submit" onclick="deleteLives()">Killall</button> -->
+
+      <div class="user-guess-letters"></div>
+      <div class="wait-message">***Wait until after animation to submit another guess.***</div>
+    </div>
   </div>
 
-  <!-- <form>
-    <input class="guess-box" type="text" pattern="[A-Za-z]{1}" title="Enter 1 letter at a time" onchange="setGuess(this.value)">
-    <button onclick="submitGuess()">Guess</button>
-  </form> -->
 
-  <input class="guess-box" type="text" onchange="setGuess(this.value)">
-  <button type="submit" onclick="submitGuess()">Guess</button>
 
 
 
