@@ -264,9 +264,6 @@ input {
 .guess-box:invalid {
   color:red;
 }
-<<<<<<< HEAD
->>>>>>> master
-=======
 
 .guess {
   margin-left: 1em;
@@ -283,4 +280,3 @@ input {
   font-size: 1.15em;
   margin-top: 1em;
 }
->>>>>>> master
