@@ -32,6 +32,16 @@ button, input, select, textarea {
   outline: none;
 }
 
+<<<<<<< HEAD
+=======
+/*button {
+  padding: 0.5em 1em;
+  background: #2694f5;
+  color: white;
+  border: 0;
+}*/
+
+>>>>>>> master
 input {
   padding: 0.5em;
   border: 1px solid #999;
