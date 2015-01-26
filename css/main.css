@@ -32,12 +32,12 @@ button, input, select, textarea {
   outline: none;
 }
 
-button {
+/*button {
   padding: 0.5em 1em;
   background: #2694f5;
   color: white;
   border: 0;
-}
+}*/
 
 input {
   padding: 0.5em;
